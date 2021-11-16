@@ -34,7 +34,9 @@ Sets the new remote:
 	git remote -v
 
 Push the changes in your local repository to GitHub.
-	git pull origin main
-	git push origin main
+
+	git push origin pull
+
+    git push origin main
 
 Pushes the changes in your local repository up to the remote repository you specified as the origin
