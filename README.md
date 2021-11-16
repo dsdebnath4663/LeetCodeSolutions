@@ -35,6 +35,8 @@ Sets the new remote:
 
 Push the changes in your local repository to GitHub.
 
-	git push origin main
+	git push origin pull
+
+    git push origin main
 
 Pushes the changes in your local repository up to the remote repository you specified as the origin
