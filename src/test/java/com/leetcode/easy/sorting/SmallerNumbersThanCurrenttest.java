@@ -1,6 +1,5 @@
 package com.leetcode.easy.sorting;
 
-import com.leetcode.easy.Searching.CheckIfNAndItsDoubleExist;
 import org.junit.Assert;
 import org.junit.Test;
 
