@@ -6,7 +6,7 @@ Simple steps to add existing project to Github.
 ## 1. Create a new repository on GitHub.
 In Terminal, change the current working directory to your local project.
 
-##2. Initialize the local directory as a Git repository.
+## 2. Initialize the local directory as a Git repository.
 
 	git init
 
@@ -41,32 +41,32 @@ Push the changes in your local repository to GitHub.
 
 Pushes the changes in your local repository up to the remote repository you specified as the origin
 
-#===
-##4. Check modified files
+
+## 4. Check modified files
  	git status
 
-##5.Now add modified files to commit
+## 5.Now add modified files to commit
  	git add src/main/java/com/leetcode/easy/linkedlist/LinkedListCycle.java
 
-##6.Commit modified files 
+## 6.Commit modified files 
  	 git commit -m "First release of Hello World!"
 
-##7 .If you want to get the list of changed files:
+## 7 .If you want to get the list of changed files:
     git show --stat --oneline HEAD 
 
     git diff-tree --no-commit-id --name-only -r <commit-ish>
 
-##8. If you want to get the list of all files in a commit, you can use
+## 8. If you want to get the list of all files in a commit, you can use
     git ls-tree --name-only -r <commit-ish>
     git show --stat --oneline HEAD
 
-##9. If you do not like/want the addition/removal stats, you can replace --stat with --name-only
+## 9. If you do not like/want the addition/removal stats, you can replace --stat with --name-only
 
     git show --name-only --oneline HEAD
     git show --name-only --oneline b24f5fb
     git show --name-only --oneline HEAD^^..HEAD
 
-##10.Force Push modified files
+## 10.Force Push modified files
     git push -u origin +master
 
 
