@@ -1,6 +1,6 @@
 package com.leetcode.medium.linkedlist;
 
-import com.leetcode.easy.linkedlist.ListNode;
+import com.leetcode.easy.linkedlist.fundamental.ListNode;
 
 public class LRUCache {
 
@@ -33,14 +33,14 @@ public class LRUCache {
             }
 
             //remove a ListNode from middle of the chain
-            else if (listNodeToBeDeleted.prev != null && listNodeToBeDeleted.next != null) {
-                listNodeToBeDeleted.next.prev = listNodeToBeDeleted.prev;
-                listNodeToBeDeleted.prev.next = listNodeToBeDeleted.next;
+            else if (listNodeToBeDeleted.prev_node != null && listNodeToBeDeleted.next != null) {
+                listNodeToBeDeleted.next.prev_node = listNodeToBeDeleted.prev_node;
+                listNodeToBeDeleted.prev_node.next = listNodeToBeDeleted.next;
             }
 
             //remove a ListNode from the end of the chain
             else if (listNodeToBeDeleted.next == null) {
-                currListNode = listNodeToBeDeleted.prev;
+                currListNode = listNodeToBeDeleted.prev_node;
                 currListNode.next = null;
             }
             return listNodeToBeDeleted;
@@ -58,7 +58,7 @@ public class LRUCache {
             //add at the end of an existing chain
             else {
                 currListNode.next = newListNode;
-                newListNode.prev = currListNode;
+                newListNode.prev_node = currListNode;
                 newListNode.next = null;
                 currListNode = currListNode.next;
             }

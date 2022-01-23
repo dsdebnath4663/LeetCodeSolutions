@@ -1,6 +1,8 @@
 package com.leetcode.easy.linkedlist;
 
 
+import com.leetcode.easy.linkedlist.fundamental.ListNode;
+
 public class ReverseLinkedList {
 
     public static ListNode reverseList(ListNode current) {

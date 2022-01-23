@@ -1,5 +1,7 @@
 package com.leetcode.easy.linkedlist;
 
+import com.leetcode.easy.linkedlist.fundamental.ListNode;
+
 public class PalindromeLinkedList {
     public boolean isPalindrome(ListNode head) {
       ListNode p1 = head;//1 2 3 4 5

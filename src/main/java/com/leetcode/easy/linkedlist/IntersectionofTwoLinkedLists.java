@@ -1,6 +1,6 @@
 package com.leetcode.easy.linkedlist;
 
-import com.leetcode.easy.linkedlist.ListNode;
+import com.leetcode.easy.linkedlist.fundamental.ListNode;
 
 public class IntersectionofTwoLinkedLists {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {

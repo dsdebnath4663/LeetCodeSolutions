@@ -1,6 +1,6 @@
 //package com.leetcode.medium.linkedlist.easy;
 //
-//import com.leetcode.easy.linkedlist.ListNode;
+//import com.leetcode.easy.linkedlist.fundamental.ListNode;
 //import org.junit.Test;
 //
 //public class RemoveDuplicatesfromSortedListtest {

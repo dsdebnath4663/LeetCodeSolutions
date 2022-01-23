@@ -1,6 +1,6 @@
 package com.leetcode.medium.linkedlist.medium;
 
-import com.leetcode.easy.linkedlist.ListNode;
+import com.leetcode.easy.linkedlist.fundamental.ListNode;
 import com.leetcode.medium.linkedlist.AddTwoNumbers;
 import org.junit.Assert;
 import org.junit.Test;
