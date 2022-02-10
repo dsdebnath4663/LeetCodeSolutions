@@ -49,7 +49,12 @@ Pushes the changes in your local repository up to the remote repository you spec
  	git add src/main/java/com/leetcode/easy/linkedlist/LinkedListCycle.java
 
 ## 6.Commit modified files 
- 	 git commit -m "First release of Hello World!"
+ 	 git commit -m "commit message"
+
+## 6.1. --amend command is a convenient way to modify the most recent commit
+
+    git commit --amend -m "an updated commit message"
+
 
 ## 7 .If you want to get the list of changed files:
     git show --stat --oneline HEAD 
