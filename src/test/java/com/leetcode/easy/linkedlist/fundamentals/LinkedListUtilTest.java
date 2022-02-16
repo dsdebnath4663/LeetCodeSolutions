@@ -180,7 +180,7 @@ public class LinkedListUtilTest {
      * Test - Inserting a Node Into a Sorted Doubly Linked List
      */
     @Test
-    public void sortedInsertTest() {
+    public void insertingANodeIntoASortedLL() {
         DoublyLinkedList llist = new DoublyLinkedList();
 
         int llistItems[] = new int[]{1, 3, 4, 10};
