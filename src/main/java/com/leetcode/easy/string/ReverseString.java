@@ -1,4 +1,4 @@
-package com.leetcode.easy;
+package com.leetcode.easy.string;
 
 public class ReverseString {
     public static void reverseString(char[] charArrayOfs) {
@@ -18,7 +18,7 @@ public class ReverseString {
     }
 
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         char[] charArrayOfs = {'h', 'e', 'l', 'l', 'o'};
         reverseString(charArrayOfs);
     }
