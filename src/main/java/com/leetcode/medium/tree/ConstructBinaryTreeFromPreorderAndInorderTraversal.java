@@ -29,9 +29,23 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
 
         // build left and right subtree
         // excluding inorderIndexMap[rootValue] element because it's the root
-        root.left = arrayToTree(preorder, left, inorderIndexMap.get(rootValue) - 1);
+          root.left = arrayToTree(preorder, left, inorderIndexMap.get(rootValue)- 1);
         root.right = arrayToTree(preorder, inorderIndexMap.get(rootValue) + 1, right);
         return root;
+    }
+
+    public static void main(String []args) {
+
+        int[] preorder = {3, 9, 20, 15, 7};
+        int[] inorder = {9, 3, 15, 20, 7};
+
+        ConstructBinaryTreeFromPreorderAndInorderTraversal tree =
+                new ConstructBinaryTreeFromPreorderAndInorderTraversal();
+        TreeNode output = tree.buildTree(preorder, inorder);
+
+
+//        LevelOrderTraversal levelOrderTraversal = new LevelOrderTraversal();
+//        levelOrderTraversal.levelOrder(output);
     }
 
 }
