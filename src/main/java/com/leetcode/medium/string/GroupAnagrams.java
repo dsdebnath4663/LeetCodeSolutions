@@ -24,4 +24,5 @@ public class GroupAnagrams {
         String[] strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
         System.out.println(groupAnagrams(strs));
     }
+
 }
