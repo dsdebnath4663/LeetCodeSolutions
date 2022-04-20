@@ -16,8 +16,10 @@ public class DecodeWays {
             res += helper(p + 2, s);
         return res;
     }
-
     public static void main(String[] args) {
-        System.out.println(numDecoding("12"));
+        String s = "12";
+        String s1 = "26";
+        String  s2 = "06";
+        System.out.println(numDecoding(s1));
     }
 }
