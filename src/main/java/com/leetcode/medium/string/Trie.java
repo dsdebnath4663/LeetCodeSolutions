@@ -27,7 +27,7 @@ public class Trie {
         for (int i = 0; i < word.length(); i++) {
             char c = word.charAt(i);
             if (trieNode.children[c - 'a'] == null) {
-                trieNode.children[c - 'a'] = new TrieNode(c);
+                 trieNode.children[c - 'a'] = new TrieNode(c);
             }
             trieNode = trieNode.children[c - 'a'];
         }
@@ -62,22 +62,22 @@ public class Trie {
             System.out.println("Apple is found in this trie");
         }
 
-//        String word2 = "app";
-//        boolean searchResult2 = trie.search(word2);     // return False
-//        if (searchResult2) {
-//            System.out.println(word2 + " word is found in this trie");
-//        } else {
-//            System.out.println(word2 + "word is not found in this trie");
-//        }
-//
-//        String word3 = "app";
-//        boolean searchResult3 = trie.startsWith(word3); // return True
-//        if (searchResult3) {
-//            System.out.println("Previously inserted string word: -apple that has the prefix :- " + word3);
-//        } else {
-//            System.out.println("No word found with prefix:- " + word3);
-//        }
-//        trie.insert("app");
-//        trie.search("app");
+        String word2 = "app";
+        boolean searchResult2 = trie.search(word2);     // return False
+        if (searchResult2) {
+            System.out.println(word2 + " word is found in this trie");
+        } else {
+            System.out.println(word2 + "word is not found in this trie");
+        }
+
+     String word3 = "app";
+     boolean searchResult3 = trie.startsWith(word3); // return True
+      if (searchResult3) {
+           System.out.println("Previously inserted string word: -apple that has the prefix :- " + word3);
+       } else {
+           System.out.println("No word found with prefix:- " + word3);
+       }
+        trie.insert("app");
+       trie.search("app");
     }
 }

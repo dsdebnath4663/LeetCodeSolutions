@@ -1,6 +1,7 @@
 package com.leetcode.medium.tree;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 public class LevelOrderTraversal {
@@ -35,7 +36,20 @@ public class LevelOrderTraversal {
             if (cur.right != null) {
                 q1.add(cur.right);
             }
-            System.out.print(cur.val + " ");
+//            System.out.print(cur.val + " ");
         }
+    }
+    private static TreeNode root;
+
+    public static void main(String args[]) {
+        LevelOrderTraversal levelOrderTraversal = new LevelOrderTraversal();
+        levelOrderTraversal.root = new TreeNode(3);
+        levelOrderTraversal.root.left = new TreeNode(9);
+        levelOrderTraversal.root.left.left = new TreeNode(15);
+        levelOrderTraversal.root.left.right = new TreeNode(7);
+
+      levelOrderTraversal.levelOrder(root);
+
+
     }
 }
