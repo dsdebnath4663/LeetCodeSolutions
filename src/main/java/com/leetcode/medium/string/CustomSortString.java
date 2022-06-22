@@ -6,10 +6,10 @@ public class CustomSortString {
         for (char c : s.toCharArray()) { ++count[c - 'a']; }
         StringBuilder sb = new StringBuilder();
         for (char c : order.toCharArray()) {
-            while (count[c - 'a']-- > 0) { sb.append(c); }    // sort chars both in T and S by the order of S.
+            while (count[c - 'a']-- > 0) { sb.append(c); }
         }
         for (char c = 'a'; c <= 'z'; ++c) {
-            while (count[c - 'a']-- > 0) { sb.append(c); }    // group chars in T but not in S.
+            while (count[c - 'a']-- > 0) { sb.append(c); }
         }
          return sb.toString();
     }
