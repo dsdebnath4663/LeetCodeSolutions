@@ -12,6 +12,7 @@ public class LongestCommonSubsequence {
         return dp[m % 2][n];
     }
     public static void main(String[] args) {
-        System.out.println(longestCommonSubsequence("abcde","ace"));
+       System.out.println(longestCommonSubsequence("abcde","ace"));
+        //        System.out.println(68^19);
     }
 }
