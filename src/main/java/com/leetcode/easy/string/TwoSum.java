@@ -19,8 +19,12 @@ public class TwoSum {
         return result;
     }
     public static void main(String[] args ){
-        int[] numbers ={2,7,11,15};
-        int target = 9;
+       // int[] numbers ={2,7,11,15};
+      //  int target = 9;
+//        int[] numbers ={3,2,4};
+//        int target = 6;
+        int[] numbers ={3,3};
+        int target = 6;
         int[] result = twoSum(numbers,target);
         System.out.println(Arrays.toString(result));
     }
