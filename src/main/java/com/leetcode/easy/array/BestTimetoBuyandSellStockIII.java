@@ -12,10 +12,9 @@ public class BestTimetoBuyandSellStockIII {
         }
         return release2; ///Since release1 is initiated as 0, so release2 will always higher than release1.
     }
-
     public static void main(String[] arges) {
-        //int[] prices = {3, 3, 5, 0, 0, 3, 1, 4};
-        int[] prices = {1,2,3,4,5};
+        //int[] prices = {3, 3, 5, 0, 0, 3, 1, 4}; //  int[] prices = {1,2,3,4,5};
+        int[] prices = {7,6,4,3,1};
         int result = maxProfit(prices);
         System.out.println("Maximum profit  is :" + result);
     }
