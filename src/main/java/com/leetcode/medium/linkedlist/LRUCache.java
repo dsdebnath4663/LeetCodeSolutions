@@ -4,18 +4,6 @@ import com.leetcode.easy.linkedlist.ListNode;
 
 public class LRUCache {
 
-//    class ListNode {
-//        ListNode prev;
-//        ListNode next;
-//        int key;
-//        int val;
-//
-//        public ListNode(int key, int val) {
-//            this.key = key;
-//            this.val = val;
-//        }
-//    }
-
     class DoubleLinkedList {   //i.e. [head]⇄ [NODE]⇄[NODE]⇄[NODE]⇄[Current Node or currListNode]⇄NULL
         ListNode headOfDoubleLinkedList;    /* to track the head of the double linked list  */
         ListNode currListNode;    /* to track the latest ListNode placed in the double linked list */
