@@ -1,6 +1,6 @@
 package com.leetcode.easy.dp;
 
-public class DivisorGame {
+public class    DivisorGame {
     /**
      * 1.About Complexity
      *     1.1 Time Complexity is O(n)

@@ -19,7 +19,9 @@ public class HouseRobberII {
         return currMax;
     }
     public static void main (String[] args){
-        int [] nums = {2,3,2};
+        //int [] nums = {2,3,2};
+       // int [] nums = {1,2,3,1};
+        int [] nums ={1,2,3};
         System.out.println(rob(nums));
 }
 }
