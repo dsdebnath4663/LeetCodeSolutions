@@ -1,5 +1,6 @@
-package com.leetcode.medium.dfs;
+package com.leetcode.medium.graph.bfs.dfs;
 
+import com.leetcode.medium.graph.dfs.MinimumValueimumJumpstoReachHome;
 import org.junit.Assert;
 import org.junit.Test;
 
