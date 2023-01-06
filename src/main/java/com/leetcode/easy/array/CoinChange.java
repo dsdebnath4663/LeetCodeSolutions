@@ -2,7 +2,7 @@ package com.leetcode.easy.array;
 
 import java.util.Arrays;
 
-public class CoinChange {
+public class  CoinChange {
     public static int coinChange(int[] coins, int amount){
         int dp[] =new int [amount+1];
    Arrays.fill(dp,Integer.MAX_VALUE);
