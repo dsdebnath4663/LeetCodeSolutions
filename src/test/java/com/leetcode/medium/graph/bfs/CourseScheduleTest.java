@@ -8,8 +8,6 @@ public class CourseScheduleTest {
 
 
     CourseSchedule courseSchedule = new CourseSchedule();
-
-
     @Test
     public void canFinishTestOne() {
         int numCourses = 2;

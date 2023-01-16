@@ -18,8 +18,7 @@ public class PacificAtlanticWaterFlowDFSTest  {
                 {2, 4, 5, 3, 1},
                 {6, 7, 1, 4, 5},
                 {5, 1, 1, 2, 4}};
-        List<List<Integer>> expected =
-                obj.pacificAtlantic(heights);
+        List<List<Integer>> expected = obj.pacificAtlantic(heights);
         System.out.print(expected);
     }
 
