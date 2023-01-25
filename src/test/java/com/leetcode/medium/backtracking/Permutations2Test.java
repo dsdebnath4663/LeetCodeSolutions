@@ -13,7 +13,10 @@ public class Permutations2Test {
     @Test
     public void Permutations2one() {
         int[] nums = {1, 1, 2};
-        List<List<Integer>> expected = Arrays.asList(Arrays.asList(1, 1, 2), Arrays.asList(1, 2, 1), Arrays.asList(2, 1, 1));
+        List<List<Integer>> expected = Arrays.asList
+                (Arrays.asList(1, 1, 2),
+                 Arrays.asList(1, 2, 1),
+                 Arrays.asList(2, 1, 1));
 
         System.out.println("Expected Output: " + expected);
 
