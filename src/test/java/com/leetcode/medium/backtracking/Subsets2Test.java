@@ -34,7 +34,6 @@ public class Subsets2Test {
                 (Arrays.asList(),
                         Arrays.asList(),
                         Arrays.asList(0));
-
         System.out.println("Expected Output: " + expected);
         List<List<Integer>> actual = obj.subsetsWithDup(nums);
         System.out.println("Actual Output:   " + actual);
