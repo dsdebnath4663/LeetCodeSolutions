@@ -25,7 +25,7 @@ public class DifferentWaystoAddParenthesesTest {
     }
 
     @Test
-    public void DifferentWaystoAddParentheses2() {
+    public void DifferentWaystoAddParentheses3() {
         String expression = "2*3-4*5";
         List<Integer> expected = Arrays.asList(-34, -14, -10, -10, 10)
                 .stream()
