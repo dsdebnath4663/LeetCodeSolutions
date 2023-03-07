@@ -16,7 +16,6 @@ public class CombinationSumTest {
         List<List<Integer>> expected = Arrays.asList
                 (Arrays.asList(1, 1, 2),
                         Arrays.asList(2, 1, 1));
-
         System.out.println("Expected Output: " + expected);
         List<List<Integer>> actual = obj.combinationSum(candidates,target);
         System.out.println("Actual Output:   " + actual);

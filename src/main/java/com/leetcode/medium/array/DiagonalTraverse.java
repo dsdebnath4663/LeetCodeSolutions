@@ -7,8 +7,6 @@ public class DiagonalTraverse {
         m = mat.length;
         n = mat[0].length;
         int[] res = new int[m * n];
-
-        //Traverse the list
         int row = 0, col = 0, index = 0;
         while(row < m && col < n){
             res[index++] = mat[row][col];

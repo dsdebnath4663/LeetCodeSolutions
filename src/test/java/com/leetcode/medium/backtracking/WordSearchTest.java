@@ -5,8 +5,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class WordSearchTest {
-
-
     WordSearch wordSearch = new WordSearch();
 
     @Test

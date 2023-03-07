@@ -52,5 +52,5 @@ public class DifferentWaystoAddParentheses {
                 return -1;
         }
     }
-}
+
 }
