@@ -1,4 +1,4 @@
-package com.leetcode.easy.dp;
+package com.leetcode.easy.array;
 
 
 public class RemoveDuplicatesfromSortedArray {

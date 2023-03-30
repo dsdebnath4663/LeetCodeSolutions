@@ -26,4 +26,5 @@ public class ProductofArrayExceptSelfTest  {
         int[] actual = object.productExceptSelf(nums);
         Assert.assertEquals(Arrays.toString(expected),Arrays.toString(actual));
     }
+
 }

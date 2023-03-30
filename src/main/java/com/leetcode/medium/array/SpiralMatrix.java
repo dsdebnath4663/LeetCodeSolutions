@@ -13,25 +13,21 @@ public class SpiralMatrix {
         int t =arr[0].length*arr.length;
         int count=0;
         while(count<t){
-            //top
             for(int i =minC;i<=maxC && count<t ;i++){
                 res.add(arr[minR][i]);
                 count++;
             }
             minR++;
-            //right
             for(int i =minR;i<=maxR && count<t;i++){
                 res.add(arr[i][maxC]);
                 count++;
             }
             maxC--;
-            //bottom
             for(int i = maxC;i>=minC&&count<t;i--){
                 res.add(arr[maxR][i]);
                 count++;
             }
             maxR--;
-            //left
             for(int i=maxR;i>=minR && count<t;i--){
                 res.add(arr[i][minC]);
                 count++;
