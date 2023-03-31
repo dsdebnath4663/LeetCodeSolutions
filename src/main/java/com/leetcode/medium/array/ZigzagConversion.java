@@ -7,11 +7,9 @@ public class ZigzagConversion {
         for(int i = 0; i < numRows; i++){
             sbs[i] = new StringBuilder();
         }
-
         char[] arr = s.toCharArray();
         int n = arr.length;
         int index = 0;
-
         //Traverse zig zag
         while(index < n){
             //Go down
@@ -25,7 +23,6 @@ public class ZigzagConversion {
                 System.out.println("Go Up before start : "+j+" "+sbs[j]);
             }
         }
-
         //Combine all stringbuilders into one
         StringBuilder res = sbs[0];
         for(int i = 1; i < numRows; i++){
@@ -37,8 +34,10 @@ public class ZigzagConversion {
     public static void main(String[] arages) {
        // String s = "PAYPALISHIRING";
        // int numRows = 3;
-        String s = "PAYPALISHIRING";
-        int numRows = 4 ;
+      //  String s = "PAYPALISHIRING";
+        //int numRows = 4 ;
+        String s = "A";
+        int numRows = 1;
         System.out.println(convert(s, numRows));
     }
 }
