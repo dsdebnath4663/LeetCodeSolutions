@@ -1,7 +1,9 @@
 package com.leetcode.easy.array;
 
+import com.leetcode.medium.array.NextPermutation;
+
 public class MoveZeroes {
-    public void moveZeroes(int[] nums) {
+    public static void moveZeroes(int[] nums) {
         // Start with the first position
         int insertPosition = 0;
 
@@ -16,8 +18,5 @@ public class MoveZeroes {
             nums[insertPosition++] = 0;
         }
     }
-    public static void main (String [] arages){
-        int [] nums = {0,1,0,3,12};
-        System.out.println(moveZeroes(nums));
     }
-}
+
