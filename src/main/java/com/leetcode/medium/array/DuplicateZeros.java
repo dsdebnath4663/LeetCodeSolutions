@@ -18,5 +18,8 @@ public class DuplicateZeros {
         }
     return array;
     }
-
+public static void main (String[]args){
+        int[] array = {1,0,2,3,0,4,5,0};
+        System.out.println(duplicateZeros(array));
+}
     }
