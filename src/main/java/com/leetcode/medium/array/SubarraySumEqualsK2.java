@@ -21,8 +21,8 @@ public class SubarraySumEqualsK2 {
 
     public static void main(String[] args) {
         //int [] nums= {1,1,1};
-        int[] nums = {1, 2, 3};
-        int k = 3;
+        int[] nums = {6 , 8 ,12,13,14,15,16,18};
+        int k = 7;
         System.out.println(subarraySum(nums, k));
     }
 
