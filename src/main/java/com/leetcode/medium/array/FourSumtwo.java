@@ -13,10 +13,10 @@ public class FourSumtwo {
         return count;
     }
     public static void main (String args[]){
-        int[] nums1 ={1,2};
-        int [] nums2 ={-2,-1};
-        int [] nums3 ={-1,2};
-        int [] nums4 ={0,2};
+        int[] nums1 ={0};
+        int [] nums2 ={0};
+        int [] nums3 ={0};
+        int [] nums4 ={0};
         System.out.println(fourSumCount(nums1,nums2,nums3,nums4));
 
     }
