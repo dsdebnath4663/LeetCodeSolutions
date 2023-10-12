@@ -14,7 +14,6 @@ public class LongestSubstringwithAtMostKDistinctCharacters {
                     --distinct;
             ans = Math.max(ans, r - l + 1);
         }
-
         return ans;
     }
     public static void main (String [] args ){
