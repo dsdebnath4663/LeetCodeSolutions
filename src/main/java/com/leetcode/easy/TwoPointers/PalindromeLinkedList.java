@@ -3,11 +3,8 @@ package com.leetcode.easy.TwoPointers;
 import com.leetcode.easy.linkedlist.ListNode;
 
 public class PalindromeLinkedList {
-    public static boolean isPalindrome(String head) {
-        ListNode slow = head;
-        String fast = head;
-        ListNode prev;
-        ListNode temp;
+    public boolean isPalindrome(ListNode head) {
+        ListNode slow = head, fast = head , prev ,temp;
         while (fast != null && fast.next != null ){
             slow = slow.next;
             fast = fast.next.next;
@@ -32,9 +29,6 @@ public class PalindromeLinkedList {
         return true;
     }
     public static void main (String []args){
-        String head = "1,2,2,1" ;
-        System.out.println(isPalindrome(head));
-
 
     }
 }
