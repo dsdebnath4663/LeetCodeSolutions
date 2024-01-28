@@ -3,7 +3,7 @@ package com.leetcode.easy.TwoPointers;
 import com.leetcode.easy.linkedlist.ListNode;
 
 public class PalindromeLinkedList {
-    public boolean isPalindrome(ListNode head) {
+    public static boolean isPalindrome(ListNode head) {
         ListNode slow = head, fast = head , prev ,temp;
         while (fast != null && fast.next != null ){
             slow = slow.next;
@@ -17,7 +17,6 @@ public class PalindromeLinkedList {
             slow.next = prev ;
             prev = slow;
             slow = temp ;
-
         }
         fast = head ;
         slow = prev;
@@ -28,7 +27,15 @@ public class PalindromeLinkedList {
         }
         return true;
     }
-    public static void main (String []args){
+    public static void main(String args[]) {
+        int[] key = {1,2,2,1};
+        ListNode listNodeHead = null;
+        for (int i = key.length - 1; i >= 0; i--) {
+            listNodeHead = new ListNode(key[i], listNodeHead);
+        }
+        boolean actualOutput = isPalindrome(listNodeHead);
+        System.out.println("Palindrome Linked List : " +
+                actualOutput);
 
     }
-}
+    }

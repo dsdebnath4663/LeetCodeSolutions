@@ -8,7 +8,7 @@ import org.junit.Test;
 public class IntersectOfTwoLLTest {
 
     @Test
-    public void testGetIntersectionNode() {
+    public void testGetIntersectionNode() throws Exception {
         ListNode newNode;
 
         ListNode list1 = new ListNode(4);
@@ -41,7 +41,7 @@ public class IntersectOfTwoLLTest {
 
         IntersectionofTwoLinkedLists intersectionOfTwoLL = new IntersectionofTwoLinkedLists();
         ListNode actualOutput = intersectionOfTwoLL.getIntersectionNode(list1, list2);
-        ListNode.print(actualOutput);
+        ListNode.print(actualOutput,false);
         Assert.assertEquals(expectedList.val, actualOutput.val);
 
     }

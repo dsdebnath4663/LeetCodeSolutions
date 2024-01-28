@@ -8,6 +8,8 @@ public class ListNode {
 
     public ListNode next;
     public ListNode prev;
+    public ListNode random;
+
 
     public ListNode() {
     }
@@ -27,15 +29,31 @@ public class ListNode {
         this.val = val;
     }
 
-    public static void print(ListNode listNode) {
+    public static void print(ListNode listNode, boolean detectCycle) throws Exception {
+//        if (detectCycle) {
+            if (listNode == null) {
+                throw new Exception("There is no cycle in the linked list... ");
+            }
+//        } else {
+            while (listNode.next != null) {
+                System.out.print(listNode.val + " -> ");
+                listNode = listNode.next;
+            }
+            System.out.print(listNode.val);
+//        }
+    }
+    public void push(int new_data) {
 
-        if (listNode == null)
-            System.out.print("null");
-        while (listNode.next != null) {
-            System.out.print(listNode.val + ".");
-            listNode = listNode.next;
-        }
-        System.out.print(listNode.val);
+        ListNode new_node = new ListNode(new_data);
+        new_node.next = random;
+        random = new_node;
     }
 
+    public static ListNode  push(int[] llElements) {
+        ListNode listNodeHead = null;
+        for (int i = llElements.length - 1; i >= 0; i--) {
+            listNodeHead = new ListNode(llElements[i], listNodeHead);
+        }
+        return listNodeHead;
+    }
 }

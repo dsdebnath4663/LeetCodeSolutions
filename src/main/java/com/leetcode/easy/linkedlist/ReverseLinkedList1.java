@@ -12,7 +12,7 @@ public class ReverseLinkedList1 {
         }
         return prev;
     }
-    public static void main(String args[]) {
+    public static void main(String args[]) throws Exception {
          int[] key = {1, 2, 3};
         //  int[] key = {9, 6, 1, 2, 7};
         ListNode listNodeHead = null;
@@ -22,7 +22,7 @@ public class ReverseLinkedList1 {
         ListNode actualOutput = reverseList(listNodeHead);
         ListNode listNodeObject = new ListNode();
         System.out.println("After Reversing :--");
-        listNodeObject.print(actualOutput);
+        ListNode.print(actualOutput,true);
     }
 }
 

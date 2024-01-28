@@ -24,7 +24,7 @@ public class ReorderList {
             left[0].next =  null;
         }
     }
-    public static void main(String args[]) {
+    public static void main(String args[]) throws Exception {
        // int key [] = {1,2,3,4};
         int key [] = {1,2,3,4,5};
         ListNode listNodeHead = null ;
@@ -34,6 +34,6 @@ public class ReorderList {
         ListNode actualOutput = reorderList(listNodeHead);
         ListNode listNodeObject = new ListNode();
         System.out.println("After Reversing :--");
-        listNodeObject.print(actualOutput);
+        ListNode.print(actualOutput,false);
     }
 }
