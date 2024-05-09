@@ -44,16 +44,15 @@ public class LinkedListCycleII {
 
 
 
-        ListNode.print(listNode2, true);
+        ListNode.print(listNode3, true);
 
     }
 
 
     private static ListNode testCaseOne3(){
         int[] llElements = {1};
-        ListNode listNodeHead = ListNode((llElements);
+        ListNode listNodeHead = ListNode.push(llElements);
         //insert cycle
-        listNodeHead = listNodeHead;
         return  listNodeHead;
     }
 

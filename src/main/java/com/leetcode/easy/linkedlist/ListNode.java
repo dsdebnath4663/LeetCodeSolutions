@@ -30,18 +30,18 @@ public class ListNode {
     }
 
     public static void print(ListNode listNode, boolean detectCycle) throws Exception {
-//        if (detectCycle) {
-            if (listNode == null) {
-                throw new Exception("There is no cycle in the linked list... ");
-            }
-//        } else {
-            while (listNode.next != null) {
-                System.out.print(listNode.val + " -> ");
-                listNode = listNode.next;
-            }
-            System.out.print(listNode.val);
-//        }
+        if (listNode == null && detectCycle) {
+            throw new Exception("There is no cycle in the linked list... ");
+        } else if (listNode == null) {
+            throw new Exception("The linked list is empty... ");
+        }
+        while (listNode.next != null) {
+            System.out.print(listNode.val + " -> ");
+            listNode = listNode.next;
+        }
+        System.out.print(listNode.val);
     }
+
     public void push(int new_data) {
 
         ListNode new_node = new ListNode(new_data);
@@ -49,7 +49,7 @@ public class ListNode {
         random = new_node;
     }
 
-    public static ListNode  push(int[] llElements) {
+    public static ListNode push(int[] llElements) {
         ListNode listNodeHead = null;
         for (int i = llElements.length - 1; i >= 0; i--) {
             listNodeHead = new ListNode(llElements[i], listNodeHead);

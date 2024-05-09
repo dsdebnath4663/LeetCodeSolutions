@@ -7,7 +7,6 @@ public class OddEvenLinkedList {
         if (head == null || head.next == null) {
             return head;
         }
-
         ListNode curOdd = head;
         ListNode EvenList = head.next;
         ListNode curEven = EvenList;
