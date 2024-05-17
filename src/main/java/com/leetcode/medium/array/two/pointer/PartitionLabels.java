@@ -46,7 +46,8 @@ public class PartitionLabels {
     }
 
     public static void main(String[] args) {
-        String s = "ababcbacadefegdehijhklij";
+       // String s = "ababcbacadefegdehijhklij";
+        String s ="eccbbbbdec";
         PartitionLabels partitionLabelsObj = new PartitionLabels();
         List<Integer> result = partitionLabelsObj.partitionLabels(s);
         System.out.println(result);
