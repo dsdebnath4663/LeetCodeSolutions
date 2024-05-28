@@ -45,7 +45,7 @@ public class ThreeSum {
 
                 // If the sum is zero, we found a valid triplet
                 if (sum == 0) {
-                    List<Integer> innerlist = Arrays.asList(nums[i], nums[left], nums[right]);
+                        List<Integer> innerlist = Arrays.asList(nums[i], nums[left], nums[right]);
                     result.add(innerlist);
                     System.out.println("innerlist : "+innerlist);
 
@@ -84,9 +84,10 @@ public class ThreeSum {
     }
 
     public static void main(String[] args) {
-//        int[] nums = {1,-4,-5,3,-5,9,0}; // Example sorted array
-        int[] nums = {0,0,0}; // Example sorted array
-
+        //      int[] nums = {1,-4,-5,3,-5,9,0}; // Example sorted array
+     //  int[] nums = {0,1,1}; // Example sorted array
+//        int[] nums = {0,0,0};
+        int[] nums={-9,0,5,8,9,-4};
         ThreeSum threeSum = new ThreeSum();
         List<List<Integer>> result = threeSum.threeSum(nums);
         System.out.println(result);
